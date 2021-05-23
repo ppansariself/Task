@@ -1,0 +1,35 @@
+ <!-- <table mat-table [dataSource]="userData" class=[customClass]> -->
+	<!-- <ng-container matColumnDef="email"> -->
+		<!-- <th mat-header-cell *matHeaderCellDef> Email  -->
+    <!-- </th> -->
+		<!-- <td mat-cell *matCellDef="let row"> {{row.email}}  -->
+    <!-- </td> -->
+	<!-- </ng-container> -->
+	<!-- <ng-container matColumnDef="first_name"> -->
+		<!-- <th mat-header-cell *matHeaderCellDef> First Name  -->
+    <!-- </th> -->
+		<!-- <td mat-cell *matCellDef="let row"> {{row.first_name}}  -->
+    <!-- </td> -->
+	<!-- </ng-container> -->
+
+	<!-- <tr mat-header-row *matHeaderRowDef="columnNames"></tr> -->
+	<!-- <tr mat-row *matRowDef="let row; columns: columnNames;"></tr> -->
+
+<!-- </table> -->
+<table class="table" *ngIf="userDataVisible">
+
+  <tr>
+    <th></th>
+    <th>First Name</th>
+	<th>Last Name</th>
+    <th>Email</th>
+  </tr>
+
+  <tr (click)="userDetails(data.id)" *ngFor="let data of userData">
+    <td><img src="{{data.avatar}}" /></td>
+    <td>{{data.first_name}}</td>
+	<td>{{data.last_name}}</td>
+    <td>{{data.email}}</td> 
+  </tr>
+  
+</table>

@@ -1,0 +1,15 @@
+.userLinks {
+	background:#5ca7dc;
+	
+	a {
+		text-decoration:none;
+		color:#fff;
+		display:inline-block;
+		margin-right:10px;
+		padding: 20px;
+	}
+	a.active-link {
+	      background: #fff;
+          color: #000;
+	}
+}

@@ -1,0 +1,18 @@
+
+<table class="table" *ngIf="userDataVisible">
+
+  <tr>
+    <th></th>
+    <th>First Name</th>
+	<th>Last Name</th>
+    <th>Email</th>
+  </tr>
+
+  <tr (click)="userDetails(data.id)" *ngFor="let data of userData">
+    <td><img src="{{data.avatar}}" /></td>
+    <td>{{data.first_name}}</td>
+	<td>{{data.last_name}}</td>
+    <td>{{data.email}}</td> 
+  </tr>
+  
+</table>

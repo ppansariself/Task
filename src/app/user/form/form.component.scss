@@ -1,0 +1,8 @@
+.table {border-spacing: 0;}
+.table th {background:#eee; padding:10px; font-size:14px;}
+.table td {
+	border-bottom:solid 1px #ccc; padding:10px;
+}
+.table tr td:first-child img {
+	border-radius:50%;
+}
